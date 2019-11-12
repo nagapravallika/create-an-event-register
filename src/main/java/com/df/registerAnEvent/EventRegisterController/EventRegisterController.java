@@ -21,7 +21,7 @@ import com.df.registerAnEvent.model.EventRegister;
 
 
 @RestController
-@RequestMapping("/event")
+@RequestMapping("/api/eventRegister")
 public class EventRegisterController 
 {
 		
@@ -30,15 +30,15 @@ public class EventRegisterController
 		
 
 		
-		@PostMapping("/saveeventRegister")
+		@PostMapping("/create")
 		public String saveEventRegister(@RequestBody EventRegister eventRegister) {
 			repository.save(eventRegister);
 			return "User Saved Sucessfully........";
 			
 		}
-		@GetMapping("getUser/{Published}")
-		public EventRegister getUserbyPublished(@PathVariable String   Published){
-			return repository.findByPublished(Published);
+		@GetMapping("getUser/{published}")
+		public EventRegister getUserbyPublished(@PathVariable String   published){
+			return repository.findByPublished(published);
 		}
 		@GetMapping("/find")
 		public List<EventRegister> getAllEventRegister(){

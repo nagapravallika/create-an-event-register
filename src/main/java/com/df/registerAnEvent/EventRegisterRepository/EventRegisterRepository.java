@@ -8,12 +8,14 @@ import com.df.registerAnEvent.model.EventRegister;
 @Repository
 
 public interface EventRegisterRepository extends MongoRepository<EventRegister , String>
-{	
+{
+
+	EventRegister findByPublished(String published);	
 //	EventRegister findByeventTitle(String EventTitle);
 //
 //	EventRegister findByEventTitle(String eventitle);
 
-	EventRegister findByPublished(String published);
+	//EventRegister findByPublished(String published);
 
 
 }

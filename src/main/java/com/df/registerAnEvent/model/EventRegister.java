@@ -3,24 +3,24 @@ package com.df.registerAnEvent.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="EventRegister")
+@Document(collection="eventRegister")
 public class EventRegister 
 {
 	@Id
 	private String id;
-	private String EventTitle;
-	private String EventCategory;
-	private String OrganizerName;
+	private String eventTitle;
+	private String eventCategory;
+	private String organizerName;
 	private Venue venue;
-	private String EventStartDate;
-	private String EventEndDate;
-	private String Summary;
-	private String TicketType;
-	private String NumberOfTickets;
-	private String TicketPrice;
-	private String TicketstartDate;
-	private String TicketEndDate;
-	private String Published;
+	private String eventStartDate;
+	private String eventEndDate;
+	private String summary;
+	private String ticketType;
+	private String numberOfTickets;
+	private String ticketPrice;
+	private String ticketstartDate;
+	private String ticketEndDate;
+	private String published;
 	
 	public EventRegister()
 	{
@@ -32,19 +32,19 @@ public class EventRegister
 			String ticketPrice, String ticketstartDate, String ticketEndDate, String published) {
 		super();
 		this.id = id;
-		EventTitle = eventTitle;
-		EventCategory = eventCategory;
-		OrganizerName = organizerName;
+		this.eventTitle = eventTitle;
+		this.eventCategory = eventCategory;
+		this.organizerName = organizerName;
 		this.venue = venue;
-		EventStartDate = eventStartDate;
-		EventEndDate = eventEndDate;
-		Summary = summary;
-		TicketType = ticketType;
-		NumberOfTickets = numberOfTickets;
-		TicketPrice = ticketPrice;
-		TicketstartDate = ticketstartDate;
-		TicketEndDate = ticketEndDate;
-		Published = published;
+		this.eventStartDate = eventStartDate;
+		this.eventEndDate = eventEndDate;
+		this.summary = summary;
+		this.ticketType = ticketType;
+		this.numberOfTickets = numberOfTickets;
+		this.ticketPrice = ticketPrice;
+		this.ticketstartDate = ticketstartDate;
+		this.ticketEndDate = ticketEndDate;
+		this.published = published;
 	}
 
 	public String getId() {
@@ -56,27 +56,27 @@ public class EventRegister
 	}
 
 	public String getEventTitle() {
-		return EventTitle;
+		return eventTitle;
 	}
 
 	public void setEventTitle(String eventTitle) {
-		EventTitle = eventTitle;
+		this.eventTitle = eventTitle;
 	}
 
 	public String getEventCategory() {
-		return EventCategory;
+		return eventCategory;
 	}
 
 	public void setEventCategory(String eventCategory) {
-		EventCategory = eventCategory;
+		this.eventCategory = eventCategory;
 	}
 
 	public String getOrganizerName() {
-		return OrganizerName;
+		return organizerName;
 	}
 
 	public void setOrganizerName(String organizerName) {
-		OrganizerName = organizerName;
+		this.organizerName = organizerName;
 	}
 
 	public Venue getVenue() {
@@ -88,76 +88,76 @@ public class EventRegister
 	}
 
 	public String getEventStartDate() {
-		return EventStartDate;
+		return eventStartDate;
 	}
 
 	public void setEventStartDate(String eventStartDate) {
-		EventStartDate = eventStartDate;
+		this.eventStartDate = eventStartDate;
 	}
 
 	public String getEventEndDate() {
-		return EventEndDate;
+		return eventEndDate;
 	}
 
 	public void setEventEndDate(String eventEndDate) {
-		EventEndDate = eventEndDate;
+		this.eventEndDate = eventEndDate;
 	}
 
 	public String getSummary() {
-		return Summary;
+		return summary;
 	}
 
 	public void setSummary(String summary) {
-		Summary = summary;
+		this.summary = summary;
 	}
 
 	public String getTicketType() {
-		return TicketType;
+		return ticketType;
 	}
 
 	public void setTicketType(String ticketType) {
-		TicketType = ticketType;
+		this.ticketType = ticketType;
 	}
 
 	public String getNumberOfTickets() {
-		return NumberOfTickets;
+		return numberOfTickets;
 	}
 
 	public void setNumberOfTickets(String numberOfTickets) {
-		NumberOfTickets = numberOfTickets;
+		this.numberOfTickets = numberOfTickets;
 	}
 
 	public String getTicketPrice() {
-		return TicketPrice;
+		return ticketPrice;
 	}
 
 	public void setTicketPrice(String ticketPrice) {
-		TicketPrice = ticketPrice;
+		this.ticketPrice = ticketPrice;
 	}
 
 	public String getTicketstartDate() {
-		return TicketstartDate;
+		return ticketstartDate;
 	}
 
 	public void setTicketstartDate(String ticketstartDate) {
-		TicketstartDate = ticketstartDate;
+		this.ticketstartDate = ticketstartDate;
 	}
 
 	public String getTicketEndDate() {
-		return TicketEndDate;
+		return ticketEndDate;
 	}
 
 	public void setTicketEndDate(String ticketEndDate) {
-		TicketEndDate = ticketEndDate;
+		this.ticketEndDate = ticketEndDate;
 	}
 
 	public String getPublished() {
-		return Published;
+		return published;
 	}
 
 	public void setPublished(String published) {
-		Published = published;
+		this.published = published;
 	}
-	
+
 	
 }
